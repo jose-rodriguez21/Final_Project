@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="MAKZT001" application="MAKZ" version="01" country="MX" language="ES">
+	<paramsIn>
+		<parameter order="1" name="entrada" mandatory="0" type="String" size="20"/>
+		<dto order="2" name="employeeIn" mandatory="0" package="com.bbva.makz.dto.employees.EmployeesDTO" artifactId="MAKZC001">
+			<parameter order="1" name="employeeNumber" mandatory="0" type="Long" size="10"/>
+			<parameter order="2" name="employeeName" mandatory="0" type="String" size="50"/>
+			<parameter order="3" name="employeeDept" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="employeeRFC" mandatory="0" type="String" size="20"/>
+			<parameter order="5" name="employeeEmail" mandatory="0" type="String" size="20"/>
+			<parameter order="6" name="employeePhone" mandatory="0" type="String" size="20"/>
+			<parameter order="7" name="employeeAddress" mandatory="0" type="String" size="20"/>
+			<parameter order="8" name="employeeDate" mandatory="0" type="Date (YYYY-MM-DD)" size="0"/>
+			<parameter order="9" name="employeeStatus" mandatory="0" type="Long" size="10"/>
+			<parameter order="10" name="salary" mandatory="0" type="Long" size="6"/>
+		</dto>
+	</paramsIn>
+	<paramsOut>
+		<dto order="1" name="employeeOut" mandatory="0" package="com.bbva.makz.dto.employees.EmployeesDTO" artifactId="MAKZC001">
+			<parameter order="1" name="employeeNumber" mandatory="0" type="Long" size="10"/>
+			<parameter order="2" name="employeeName" mandatory="0" type="String" size="50"/>
+			<parameter order="3" name="employeeDept" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="employeeRFC" mandatory="0" type="String" size="20"/>
+			<parameter order="5" name="employeeEmail" mandatory="0" type="String" size="20"/>
+			<parameter order="6" name="employeePhone" mandatory="0" type="String" size="20"/>
+			<parameter order="7" name="employeeAddress" mandatory="0" type="String" size="20"/>
+			<parameter order="8" name="employeeDate" mandatory="0" type="Date (YYYY-MM-DD)" size="0"/>
+			<parameter order="9" name="employeeStatus" mandatory="0" type="Long" size="10"/>
+			<parameter order="10" name="salary" mandatory="0" type="Long" size="6"/>
+		</dto>
+		<list order="2" name="listDTO" mandatory="0">
+			<dto order="1" name="Type" mandatory="0" package="com.bbva.makz.dto.employees.EmployeesDTO" artifactId="MAKZC001">
+				<parameter order="1" name="employeeNumber" mandatory="0" type="Long" size="10"/>
+				<parameter order="2" name="employeeName" mandatory="0" type="String" size="50"/>
+				<parameter order="3" name="employeeDept" mandatory="0" type="String" size="50"/>
+				<parameter order="4" name="employeeRFC" mandatory="0" type="String" size="20"/>
+				<parameter order="5" name="employeeEmail" mandatory="0" type="String" size="20"/>
+				<parameter order="6" name="employeePhone" mandatory="0" type="String" size="20"/>
+				<parameter order="7" name="employeeAddress" mandatory="0" type="String" size="20"/>
+				<parameter order="8" name="employeeDate" mandatory="0" type="Date (YYYY-MM-DD)" size="0"/>
+				<parameter order="9" name="employeeStatus" mandatory="0" type="Long" size="10"/>
+				<parameter order="10" name="salary" mandatory="0" type="Long" size="6"/>
+			</dto>
+		</list>
+	</paramsOut>
+	<description>TRX para CRUD Employees</description>
+</transaction>
